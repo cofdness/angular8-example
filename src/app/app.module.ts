@@ -4,15 +4,23 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeroesComponent } from './components/heroes/heroes.component';
+import {FormsModule} from "@angular/forms";
+import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
+import { MessagesComponent } from './components/messages/messages.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroesComponent,
+    HeroDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
