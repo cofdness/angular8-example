@@ -10,5 +10,9 @@
       <input [(ngModel)]="hero.name" placeholder="name" />
     </label>
   </div>
-  <button (click)="goBack()">go back</button>
+  <div class="mat-button">
+    <button (click)="save(hero)" >Save</button>
+    <button (click)="goBack()">Go back</button>
+  </div>
+
 </div>
